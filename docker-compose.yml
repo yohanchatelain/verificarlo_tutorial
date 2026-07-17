@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  tutorial:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        LLVM_VERSION: "20"
+    container_name: verificarlo-tutorial
+    volumes:
+      - .:/workspace
+    tty: true
+    stdin_open: true
+    environment:
+      - LLVM_VERSION=20

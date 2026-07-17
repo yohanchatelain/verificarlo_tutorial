@@ -1,0 +1,61 @@
+# Git
+.git
+.gitignore
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+
+# LaTeX temporary files
+*.dvi
+*.ps
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+
+# VSCode
+.vscode
+
+# MyPy cache
+.mypy_cache
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# IDE
+.idea
+
+# Claude
+.claude
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build directory for exercises
+/tmp
+*.o
+*.exe
+
+# Makefile generated files
+Makefile
+
+# Verificarlo tutorial build files
+verificarlo-tutorial/*/
+!verificarlo-tutorial/**/*.c
+!verificarlo-tutorial/**/*.h
+!verificarlo-tutorial/**/*.py
+!verificarlo-tutorial/**/*.sh
+!verificarlo-tutorial/**/Makefile
+!verificarlo-tutorial/**/ddCmp
+!verificarlo-tutorial/**/ddRun
