@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install notebook dependencies
-        run: pip install numpy scipy pandas matplotlib significantdigits jupyter nbconvert ipykernel
+        run: python3 -m pip install --no-cache-dir numpy scipy pandas matplotlib significantdigits jupyter nbconvert ipykernel
 
       - name: Execute notebook
         run: jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=1800 --output tutorial-executed.ipynb tutorial.ipynb
